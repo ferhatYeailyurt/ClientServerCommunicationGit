@@ -34,11 +34,12 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(133, 175);
+            this.button1.Location = new System.Drawing.Point(80, 186);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(101, 40);
             this.button1.TabIndex = 0;
@@ -76,22 +77,33 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(186, 20);
             this.textBox2.TabIndex = 4;
+            this.textBox2.UseSystemPasswordChar = true;
             // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(142, 228);
+            this.linkLabel1.Location = new System.Drawing.Point(157, 239);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(81, 13);
             this.linkLabel1.TabIndex = 6;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Şifremi Unuttum";
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(213, 186);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(101, 40);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "Geri Dön";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(372, 359);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
@@ -114,5 +126,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.Button button2;
     }
 }
