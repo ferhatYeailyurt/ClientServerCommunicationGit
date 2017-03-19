@@ -35,10 +35,11 @@
             this.txt_adi = new System.Windows.Forms.TextBox();
             this.txt_soyadi = new System.Windows.Forms.TextBox();
             this.txt_email = new System.Windows.Forms.TextBox();
-            this.txt_sifre = new System.Windows.Forms.TextBox();
             this.kaydet_btn = new System.Windows.Forms.Button();
             this.temizle_btn = new System.Windows.Forms.Button();
             this.returnForm = new System.Windows.Forms.Button();
+            this.txt_sifre = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -82,35 +83,29 @@
             this.txt_adi.Location = new System.Drawing.Point(155, 28);
             this.txt_adi.Name = "txt_adi";
             this.txt_adi.Size = new System.Drawing.Size(100, 20);
-            this.txt_adi.TabIndex = 4;
+            this.txt_adi.TabIndex = 1;
+            this.txt_adi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_KeyPress);
             // 
             // txt_soyadi
             // 
             this.txt_soyadi.Location = new System.Drawing.Point(155, 67);
             this.txt_soyadi.Name = "txt_soyadi";
             this.txt_soyadi.Size = new System.Drawing.Size(100, 20);
-            this.txt_soyadi.TabIndex = 5;
+            this.txt_soyadi.TabIndex = 2;
             // 
             // txt_email
             // 
             this.txt_email.Location = new System.Drawing.Point(155, 105);
             this.txt_email.Name = "txt_email";
             this.txt_email.Size = new System.Drawing.Size(100, 20);
-            this.txt_email.TabIndex = 6;
-            // 
-            // txt_sifre
-            // 
-            this.txt_sifre.Location = new System.Drawing.Point(155, 139);
-            this.txt_sifre.Name = "txt_sifre";
-            this.txt_sifre.Size = new System.Drawing.Size(100, 20);
-            this.txt_sifre.TabIndex = 7;
+            this.txt_email.TabIndex = 3;
             // 
             // kaydet_btn
             // 
             this.kaydet_btn.Location = new System.Drawing.Point(46, 221);
             this.kaydet_btn.Name = "kaydet_btn";
             this.kaydet_btn.Size = new System.Drawing.Size(75, 23);
-            this.kaydet_btn.TabIndex = 8;
+            this.kaydet_btn.TabIndex = 5;
             this.kaydet_btn.Text = "Kaydet";
             this.kaydet_btn.UseVisualStyleBackColor = true;
             this.kaydet_btn.Click += new System.EventHandler(this.kaydet_btn_Click);
@@ -120,29 +115,48 @@
             this.temizle_btn.Location = new System.Drawing.Point(145, 220);
             this.temizle_btn.Name = "temizle_btn";
             this.temizle_btn.Size = new System.Drawing.Size(75, 23);
-            this.temizle_btn.TabIndex = 9;
+            this.temizle_btn.TabIndex = 6;
             this.temizle_btn.Text = "Temizle";
             this.temizle_btn.UseVisualStyleBackColor = true;
+            this.temizle_btn.Click += new System.EventHandler(this.temizle_btn_Click);
             // 
             // returnForm
             // 
             this.returnForm.Location = new System.Drawing.Point(250, 221);
             this.returnForm.Name = "returnForm";
             this.returnForm.Size = new System.Drawing.Size(75, 23);
-            this.returnForm.TabIndex = 10;
+            this.returnForm.TabIndex = 7;
             this.returnForm.Text = "Geri Dön";
             this.returnForm.UseVisualStyleBackColor = true;
             this.returnForm.Click += new System.EventHandler(this.returnForm_Click);
+            // 
+            // txt_sifre
+            // 
+            this.txt_sifre.Location = new System.Drawing.Point(155, 139);
+            this.txt_sifre.Name = "txt_sifre";
+            this.txt_sifre.Size = new System.Drawing.Size(100, 20);
+            this.txt_sifre.TabIndex = 8;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(281, 28);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(30, 13);
+            this.label5.TabIndex = 9;
+            this.label5.Text = "k.adi";
+            this.label5.Visible = false;
             // 
             // UserRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(354, 284);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txt_sifre);
             this.Controls.Add(this.returnForm);
             this.Controls.Add(this.temizle_btn);
             this.Controls.Add(this.kaydet_btn);
-            this.Controls.Add(this.txt_sifre);
             this.Controls.Add(this.txt_email);
             this.Controls.Add(this.txt_soyadi);
             this.Controls.Add(this.txt_adi);
@@ -167,9 +181,10 @@
         private System.Windows.Forms.TextBox txt_adi;
         private System.Windows.Forms.TextBox txt_soyadi;
         private System.Windows.Forms.TextBox txt_email;
-        private System.Windows.Forms.TextBox txt_sifre;
         private System.Windows.Forms.Button kaydet_btn;
         private System.Windows.Forms.Button temizle_btn;
         private System.Windows.Forms.Button returnForm;
+        private System.Windows.Forms.TextBox txt_sifre;
+        public System.Windows.Forms.Label label5;
     }
 }

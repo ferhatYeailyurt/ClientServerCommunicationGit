@@ -13,15 +13,20 @@ namespace ClientServerCommunication.Controller
 {
     class User_OperaitonsController
     {
+
         UserDBDataClassesDataContext usDataContext;
         User_Data_Table usDataTable;
+
         User_ModelCS userModel;
 
         public User_OperaitonsController()
         {
             usDataContext = new UserDBDataClassesDataContext();
+
             usDataTable = new User_Data_Table();
+
             userModel = new User_ModelCS();
+
         }
 
             
@@ -49,6 +54,7 @@ namespace ClientServerCommunication.Controller
                 usDataTable.USER_SURNAME = userModel.Soyad;
                 usDataTable.USER_MAIL = userModel.Email;
                 usDataTable.USER_PASSWORD = userModel.Sifre;
+
                 usDataContext.User_Data_Tables.InsertOnSubmit(usDataTable);
                 usDataContext.SubmitChanges();
                 
