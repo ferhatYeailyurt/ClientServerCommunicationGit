@@ -32,13 +32,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.txt_adi = new System.Windows.Forms.TextBox();
+            this.txt_soyadi = new System.Windows.Forms.TextBox();
+            this.txt_email = new System.Windows.Forms.TextBox();
+            this.txt_sifre = new System.Windows.Forms.TextBox();
+            this.kaydet_btn = new System.Windows.Forms.Button();
+            this.temizle_btn = new System.Windows.Forms.Button();
+            this.returnForm = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -77,80 +77,82 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Şifre:";
             // 
-            // textBox1
+            // txt_adi
             // 
-            this.textBox1.Location = new System.Drawing.Point(155, 28);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 4;
+            this.txt_adi.Location = new System.Drawing.Point(155, 28);
+            this.txt_adi.Name = "txt_adi";
+            this.txt_adi.Size = new System.Drawing.Size(100, 20);
+            this.txt_adi.TabIndex = 4;
             // 
-            // textBox2
+            // txt_soyadi
             // 
-            this.textBox2.Location = new System.Drawing.Point(155, 67);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 5;
+            this.txt_soyadi.Location = new System.Drawing.Point(155, 67);
+            this.txt_soyadi.Name = "txt_soyadi";
+            this.txt_soyadi.Size = new System.Drawing.Size(100, 20);
+            this.txt_soyadi.TabIndex = 5;
             // 
-            // textBox3
+            // txt_email
             // 
-            this.textBox3.Location = new System.Drawing.Point(155, 105);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 6;
+            this.txt_email.Location = new System.Drawing.Point(155, 105);
+            this.txt_email.Name = "txt_email";
+            this.txt_email.Size = new System.Drawing.Size(100, 20);
+            this.txt_email.TabIndex = 6;
             // 
-            // textBox4
+            // txt_sifre
             // 
-            this.textBox4.Location = new System.Drawing.Point(155, 139);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 7;
+            this.txt_sifre.Location = new System.Drawing.Point(155, 139);
+            this.txt_sifre.Name = "txt_sifre";
+            this.txt_sifre.Size = new System.Drawing.Size(100, 20);
+            this.txt_sifre.TabIndex = 7;
             // 
-            // button1
+            // kaydet_btn
             // 
-            this.button1.Location = new System.Drawing.Point(46, 221);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Kaydet";
-            this.button1.UseVisualStyleBackColor = true;
+            this.kaydet_btn.Location = new System.Drawing.Point(46, 221);
+            this.kaydet_btn.Name = "kaydet_btn";
+            this.kaydet_btn.Size = new System.Drawing.Size(75, 23);
+            this.kaydet_btn.TabIndex = 8;
+            this.kaydet_btn.Text = "Kaydet";
+            this.kaydet_btn.UseVisualStyleBackColor = true;
+            this.kaydet_btn.Click += new System.EventHandler(this.kaydet_btn_Click);
             // 
-            // button2
+            // temizle_btn
             // 
-            this.button2.Location = new System.Drawing.Point(145, 220);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Temizle";
-            this.button2.UseVisualStyleBackColor = true;
+            this.temizle_btn.Location = new System.Drawing.Point(145, 220);
+            this.temizle_btn.Name = "temizle_btn";
+            this.temizle_btn.Size = new System.Drawing.Size(75, 23);
+            this.temizle_btn.TabIndex = 9;
+            this.temizle_btn.Text = "Temizle";
+            this.temizle_btn.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // returnForm
             // 
-            this.button3.Location = new System.Drawing.Point(250, 221);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Geri Dön";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.returnForm.Location = new System.Drawing.Point(250, 221);
+            this.returnForm.Name = "returnForm";
+            this.returnForm.Size = new System.Drawing.Size(75, 23);
+            this.returnForm.TabIndex = 10;
+            this.returnForm.Text = "Geri Dön";
+            this.returnForm.UseVisualStyleBackColor = true;
+            this.returnForm.Click += new System.EventHandler(this.returnForm_Click);
             // 
             // UserRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(354, 284);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.returnForm);
+            this.Controls.Add(this.temizle_btn);
+            this.Controls.Add(this.kaydet_btn);
+            this.Controls.Add(this.txt_sifre);
+            this.Controls.Add(this.txt_email);
+            this.Controls.Add(this.txt_soyadi);
+            this.Controls.Add(this.txt_adi);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "UserRegister";
             this.Text = "User Register";
+            this.Load += new System.EventHandler(this.UserRegister_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -162,12 +164,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox txt_adi;
+        private System.Windows.Forms.TextBox txt_soyadi;
+        private System.Windows.Forms.TextBox txt_email;
+        private System.Windows.Forms.TextBox txt_sifre;
+        private System.Windows.Forms.Button kaydet_btn;
+        private System.Windows.Forms.Button temizle_btn;
+        private System.Windows.Forms.Button returnForm;
     }
 }

@@ -21,5 +21,17 @@ namespace ClientServerCommunication
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            WelcomeForm welcomeForm = new WelcomeForm();
+            welcomeForm.Show();
+            this.Hide();
+        }
+
+        private void giris_yap_btn_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

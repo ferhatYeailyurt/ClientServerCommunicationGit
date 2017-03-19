@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.giris_yap_btn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -37,14 +37,15 @@
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // giris_yap_btn
             // 
-            this.button1.Location = new System.Drawing.Point(80, 186);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(101, 40);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Giriş Yap";
-            this.button1.UseVisualStyleBackColor = true;
+            this.giris_yap_btn.Location = new System.Drawing.Point(80, 186);
+            this.giris_yap_btn.Name = "giris_yap_btn";
+            this.giris_yap_btn.Size = new System.Drawing.Size(101, 40);
+            this.giris_yap_btn.TabIndex = 0;
+            this.giris_yap_btn.Text = "Giriş Yap";
+            this.giris_yap_btn.UseVisualStyleBackColor = true;
+            this.giris_yap_btn.Click += new System.EventHandler(this.giris_yap_btn_Click);
             // 
             // label1
             // 
@@ -97,6 +98,7 @@
             this.button2.TabIndex = 7;
             this.button2.Text = "Geri Dön";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // LoginForm
             // 
@@ -109,7 +111,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.giris_yap_btn);
             this.Name = "LoginForm";
             this.Text = "Login Form";
             this.Load += new System.EventHandler(this.LoginForm_Load);
@@ -120,7 +122,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button giris_yap_btn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;

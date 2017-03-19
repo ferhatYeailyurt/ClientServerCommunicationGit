@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ClientServerDatabase" Class="UserDBDataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ASUS\FERHATY;Initial Catalog=ClientServerDatabase;Integrated Security=True" SettingsObjectName="ClientServerCommunication.Properties.Settings" SettingsPropertyName="ClientServerDatabaseConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.User_Data_Table" Member="User_Data_Tables">
+    <Type Name="User_Data_Table">
+      <Column Name="USER_ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="USER_NAME" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="USER_SURNAME" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="USER_MAIL" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="USER_PASSWORD" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
