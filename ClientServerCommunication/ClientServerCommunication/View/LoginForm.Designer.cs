@@ -31,8 +31,8 @@
             this.giris_yap_btn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_username = new System.Windows.Forms.TextBox();
+            this.txt_password = new System.Windows.Forms.TextBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -65,20 +65,19 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Şifre:";
             // 
-            // textBox1
+            // txt_username
             // 
-            this.textBox1.Location = new System.Drawing.Point(116, 19);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(186, 20);
-            this.textBox1.TabIndex = 3;
+            this.txt_username.Location = new System.Drawing.Point(116, 19);
+            this.txt_username.Name = "txt_username";
+            this.txt_username.Size = new System.Drawing.Size(186, 20);
+            this.txt_username.TabIndex = 3;
             // 
-            // textBox2
+            // txt_password
             // 
-            this.textBox2.Location = new System.Drawing.Point(116, 103);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(186, 20);
-            this.textBox2.TabIndex = 4;
-            this.textBox2.UseSystemPasswordChar = true;
+            this.txt_password.Location = new System.Drawing.Point(116, 103);
+            this.txt_password.Name = "txt_password";
+            this.txt_password.Size = new System.Drawing.Size(186, 20);
+            this.txt_password.TabIndex = 4;
             // 
             // linkLabel1
             // 
@@ -107,8 +106,8 @@
             this.ClientSize = new System.Drawing.Size(372, 359);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txt_password);
+            this.Controls.Add(this.txt_username);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.giris_yap_btn);
@@ -125,8 +124,8 @@
         private System.Windows.Forms.Button giris_yap_btn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_username;
+        private System.Windows.Forms.TextBox txt_password;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Button button2;
     }

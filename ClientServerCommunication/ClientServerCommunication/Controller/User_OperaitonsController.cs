@@ -8,6 +8,7 @@ using ClientServerCommunication;
 
 using ClientServerCommunication.Model;
 using ClientServerCommunication.db_objects;
+using ClientServerCommunication.View;
 
 namespace ClientServerCommunication.Controller
 {
@@ -61,9 +62,33 @@ namespace ClientServerCommunication.Controller
             }
             catch(Exception e)
             {
-                MessageBox.Show("İşlem Hatalı!!!");
+                MessageBox.Show("Veri eklenmedi, bir hata var!!!");
             }
 
+        }
+
+        public void loginUser()
+        {
+           if(checkLogin(userModel.Ad.ToString(),userModel.Sifre.ToString()))
+            {
+                MainForm mainForm = new MainForm();
+                mainForm.Show();
+                
+            }
+        }
+
+        private bool checkLogin(String ad, String sifre)
+        {
+            var q = from p in usDataContext.User_Data_Tables where p.USER_NAME == ad && p.USER_PASSWORD == sifre select p;
+
+            if (q.Any())
+            {
+                return true;
+            }
+            else
+            {
+                return false ;
+            }
         }
 
 

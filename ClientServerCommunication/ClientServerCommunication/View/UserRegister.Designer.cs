@@ -39,7 +39,6 @@
             this.temizle_btn = new System.Windows.Forms.Button();
             this.returnForm = new System.Windows.Forms.Button();
             this.txt_sifre = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -137,22 +136,11 @@
             this.txt_sifre.Size = new System.Drawing.Size(100, 20);
             this.txt_sifre.TabIndex = 8;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(281, 28);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(30, 13);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "k.adi";
-            this.label5.Visible = false;
-            // 
             // UserRegister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(354, 284);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.txt_sifre);
             this.Controls.Add(this.returnForm);
             this.Controls.Add(this.temizle_btn);
@@ -185,6 +173,5 @@
         private System.Windows.Forms.Button temizle_btn;
         private System.Windows.Forms.Button returnForm;
         private System.Windows.Forms.TextBox txt_sifre;
-        public System.Windows.Forms.Label label5;
     }
 }
