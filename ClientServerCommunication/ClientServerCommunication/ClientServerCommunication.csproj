@@ -71,6 +71,12 @@
     <Compile Include="View\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\PasswordRememberForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PasswordRememberForm.Designer.cs">
+      <DependentUpon>PasswordRememberForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\UserRegister.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,9 @@
     </Compile>
     <EmbeddedResource Include="View\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PasswordRememberForm.resx">
+      <DependentUpon>PasswordRememberForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\UserRegister.resx">
       <DependentUpon>UserRegister.cs</DependentUpon>

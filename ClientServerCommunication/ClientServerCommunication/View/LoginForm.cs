@@ -46,8 +46,8 @@ namespace ClientServerCommunication
 
         public void getValueDb()
         {
-            userModel.Ad = txt_username.Text;
-            userModel.Sifre = txt_password.Text;
+            userModel.Ad = txt_username.Text.ToLower();
+            userModel.Sifre = txt_password.Text.ToLower();
 
             userOperation.setController(userModel);
         }
@@ -63,9 +63,22 @@ namespace ClientServerCommunication
             }
 
             userOperation.loginUser();
+            userOperation.sendPasswordMail();
+
+            if(userOperation.kapat=="kapat")
+            {
+                this.Hide();
+            }
 
 
 
+        }
+
+        private void SifremiUnuttum_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            PasswordRememberForm passForm = new PasswordRememberForm();
+            passForm.Show();
+            
         }
     }
 }

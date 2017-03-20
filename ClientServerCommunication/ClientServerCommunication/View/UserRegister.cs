@@ -37,10 +37,10 @@ namespace ClientServerCommunication.View
 
         public void getValueTextBox() {
 
-            userModel.Ad = txt_adi.Text;
-            userModel.Soyad = txt_soyadi.Text;
+            userModel.Ad = txt_adi.Text.ToLower();
+            userModel.Soyad = txt_soyadi.Text.ToLower();
             userModel.Email = txt_email.Text;
-            userModel.Sifre = txt_sifre.Text;
+            userModel.Sifre = txt_sifre.Text.ToLower();
 
             userOperation.setController(userModel);
 

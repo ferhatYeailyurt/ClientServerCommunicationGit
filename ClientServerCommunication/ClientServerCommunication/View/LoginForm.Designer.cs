@@ -33,7 +33,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txt_username = new System.Windows.Forms.TextBox();
             this.txt_password = new System.Windows.Forms.TextBox();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.SifremiUnuttum = new System.Windows.Forms.LinkLabel();
             this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -79,15 +79,16 @@
             this.txt_password.Size = new System.Drawing.Size(186, 20);
             this.txt_password.TabIndex = 4;
             // 
-            // linkLabel1
+            // SifremiUnuttum
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(157, 239);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(81, 13);
-            this.linkLabel1.TabIndex = 6;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Şifremi Unuttum";
+            this.SifremiUnuttum.AutoSize = true;
+            this.SifremiUnuttum.Location = new System.Drawing.Point(157, 239);
+            this.SifremiUnuttum.Name = "SifremiUnuttum";
+            this.SifremiUnuttum.Size = new System.Drawing.Size(81, 13);
+            this.SifremiUnuttum.TabIndex = 6;
+            this.SifremiUnuttum.TabStop = true;
+            this.SifremiUnuttum.Text = "Şifremi Unuttum";
+            this.SifremiUnuttum.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.SifremiUnuttum_LinkClicked);
             // 
             // button2
             // 
@@ -105,7 +106,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(372, 359);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.SifremiUnuttum);
             this.Controls.Add(this.txt_password);
             this.Controls.Add(this.txt_username);
             this.Controls.Add(this.label2);
@@ -126,7 +127,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_username;
         private System.Windows.Forms.TextBox txt_password;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel SifremiUnuttum;
         private System.Windows.Forms.Button button2;
     }
 }
