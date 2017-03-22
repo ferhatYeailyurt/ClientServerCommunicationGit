@@ -125,9 +125,9 @@
         private System.Windows.Forms.Button giris_yap_btn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txt_username;
         private System.Windows.Forms.TextBox txt_password;
         private System.Windows.Forms.LinkLabel SifremiUnuttum;
         private System.Windows.Forms.Button button2;
+        public System.Windows.Forms.TextBox txt_username;
     }
 }

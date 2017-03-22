@@ -21,13 +21,16 @@ namespace ClientServerCommunication
 
         User_ModelCS userModel;
         User_Data_Table usDataTable;
-        User_OperaitonsController userOperation;
+        User_OperaitonsController userOperation,us1;
+
+        MainForm mainForm;
 
         public LoginForm()
         {
             userModel = new User_ModelCS();
             usDataTable = new User_Data_Table();
             userOperation = new User_OperaitonsController();
+            mainForm = new MainForm();
 
             InitializeComponent();
         }
@@ -52,6 +55,10 @@ namespace ClientServerCommunication
             userOperation.setController(userModel);
         }
 
+
+        public String username;
+        private User_OperaitonsController user_OperaitonsController;
+
         private void giris_yap_btn_Click(object sender, EventArgs e)
         {
             getValueDb();
@@ -61,12 +68,19 @@ namespace ClientServerCommunication
                 MessageBox.Show("Lütfen kullanıcı adı ve parolasını giriniz...");
                 return;
             }
+             username = txt_username.Text;
 
+            
             userOperation.loginUser();
-            userOperation.sendPasswordMail();
 
-            if(userOperation.kapat=="kapat")
+           
+            if (userOperation.kapat=="kapat")
             {
+                MainForm mainForm = new MainForm();
+                mainForm.Show();
+
+                mainForm.userNameLabel.Text = txt_username.Text; //kullanici adi ile sisteme giriş yaptıktan sonra yeni form ekranında bu kullanıcı adı çıkıyor...
+
                 this.Hide();
             }
 

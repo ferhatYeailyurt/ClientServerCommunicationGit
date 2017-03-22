@@ -39,7 +39,6 @@ namespace ClientServerCommunication.View
 
         }
 
-        
-  
+
     }
 }

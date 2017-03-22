@@ -22,6 +22,9 @@ namespace ClientServerCommunication.Controller
         UserDBDataClassesDataContext usDataContext;
         User_Data_Table usDataTable;
 
+
+        LoginForm loginForm;
+
         User_ModelCS userModel;
 
         public User_OperaitonsController()
@@ -31,8 +34,9 @@ namespace ClientServerCommunication.Controller
             usDataTable = new User_Data_Table();
 
             userModel = new User_ModelCS();
-
+               
         }
+      
 
             
         public User_OperaitonsController(User_ModelCS us)
@@ -76,8 +80,8 @@ namespace ClientServerCommunication.Controller
         {
            if(checkLogin(userModel.Ad.ToString(),userModel.Sifre.ToString()))
             {
-                MainForm mainForm = new MainForm();
-                mainForm.Show();
+ 
+                
 
                 kapat = "kapat";
             }
@@ -112,7 +116,7 @@ namespace ClientServerCommunication.Controller
           
             if(q.Any())
             {
-                bool x = false;
+                
                 foreach (var maillist in q)
                 {
                     
@@ -132,7 +136,7 @@ namespace ClientServerCommunication.Controller
 
                 };
 
-                client.Send("clientserver40@gmail.com", mail, "Şifre Sıfırlama", sifre);
+                client.Send("mail@dpu.edu.tr", mail, "Şifre Sıfırlama", sifre);
                 MessageBox.Show(mail +" mail adresinize şifre bilgileri gönderilmiştir...");
                 return true;
 
