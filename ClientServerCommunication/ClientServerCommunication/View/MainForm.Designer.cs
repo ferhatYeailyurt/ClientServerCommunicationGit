@@ -30,6 +30,8 @@
         {
             this.userNameLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btn_userList = new System.Windows.Forms.Button();
+            this.lstView_User = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
             // userNameLabel
@@ -50,11 +52,31 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Hoş Geldiniz";
             // 
+            // btn_userList
+            // 
+            this.btn_userList.Location = new System.Drawing.Point(20, 28);
+            this.btn_userList.Name = "btn_userList";
+            this.btn_userList.Size = new System.Drawing.Size(75, 23);
+            this.btn_userList.TabIndex = 2;
+            this.btn_userList.Text = "Listele";
+            this.btn_userList.UseVisualStyleBackColor = true;
+            this.btn_userList.Click += new System.EventHandler(this.btn_userList_Click);
+            // 
+            // lstView_User
+            // 
+            this.lstView_User.Location = new System.Drawing.Point(16, 73);
+            this.lstView_User.Name = "lstView_User";
+            this.lstView_User.Size = new System.Drawing.Size(166, 296);
+            this.lstView_User.TabIndex = 5;
+            this.lstView_User.UseCompatibleStateImageBehavior = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(778, 395);
+            this.Controls.Add(this.lstView_User);
+            this.Controls.Add(this.btn_userList);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.userNameLabel);
             this.Name = "MainForm";
@@ -68,5 +90,7 @@
 
         public System.Windows.Forms.Label userNameLabel;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btn_userList;
+        public System.Windows.Forms.ListView lstView_User;
     }
 }
