@@ -31,6 +31,23 @@ namespace ClientServerCommunication.View
            
         }
 
+        private void lstView_User_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+            
 
+        }
+
+        private void btn_userSelect_Click(object sender, EventArgs e)
+        {
+            if (lstView_User.SelectedItems.Count > 0)
+            {
+                MessageBox.Show("Kullanıcı " + lstView_User.SelectedItems[0].Text + "seçildi.");
+            }
+            else
+            {
+                MessageBox.Show("Lütfen ilk önce kullanıcıyı seçiniz...");
+            }
+        }
     }
 }

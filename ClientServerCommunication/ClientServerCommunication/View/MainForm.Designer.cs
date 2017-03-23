@@ -32,6 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btn_userList = new System.Windows.Forms.Button();
             this.lstView_User = new System.Windows.Forms.ListView();
+            this.btn_userSelect = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // userNameLabel
@@ -69,12 +70,24 @@
             this.lstView_User.Size = new System.Drawing.Size(166, 296);
             this.lstView_User.TabIndex = 5;
             this.lstView_User.UseCompatibleStateImageBehavior = false;
+            this.lstView_User.SelectedIndexChanged += new System.EventHandler(this.lstView_User_SelectedIndexChanged);
+            // 
+            // btn_userSelect
+            // 
+            this.btn_userSelect.Location = new System.Drawing.Point(107, 28);
+            this.btn_userSelect.Name = "btn_userSelect";
+            this.btn_userSelect.Size = new System.Drawing.Size(86, 23);
+            this.btn_userSelect.TabIndex = 7;
+            this.btn_userSelect.Text = "Kullanıcı Seç:";
+            this.btn_userSelect.UseVisualStyleBackColor = true;
+            this.btn_userSelect.Click += new System.EventHandler(this.btn_userSelect_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(778, 395);
+            this.Controls.Add(this.btn_userSelect);
             this.Controls.Add(this.lstView_User);
             this.Controls.Add(this.btn_userList);
             this.Controls.Add(this.label1);
@@ -92,5 +105,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_userList;
         public System.Windows.Forms.ListView lstView_User;
+        private System.Windows.Forms.Button btn_userSelect;
     }
 }

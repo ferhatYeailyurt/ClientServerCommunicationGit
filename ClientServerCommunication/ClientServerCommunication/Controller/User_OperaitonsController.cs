@@ -157,7 +157,7 @@ namespace ClientServerCommunication.Controller
             var q = from p in usDataContext.User_Data_Tables  select p;
 
             string[] array=new string[q.Count()];
-            List<string> _items = new List<string>();
+           
             int i=0;
             while(i<q.Count())
             {
@@ -168,8 +168,6 @@ namespace ClientServerCommunication.Controller
 
                     MainForm main = (MainForm)Application.OpenForms["MainForm"];
                     main.lstView_User.Items.Add(array[i]); //form uygulaması açıkken kullanıcı adlarını listview e veri ekleme işlemleri
-
-
                 }
                 break;
                     
