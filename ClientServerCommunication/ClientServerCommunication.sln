@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientServerCommunication", "ClientServerCommunication\ClientServerCommunication.csproj", "{9EFCEA55-57F0-4ACE-B2F6-5B53E3AE0CED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerListeningApplication", "ServerListeningApplication\ServerListeningApplication.csproj", "{25DE18DE-D317-4F1D-A4EE-C156807DB749}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{9EFCEA55-57F0-4ACE-B2F6-5B53E3AE0CED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EFCEA55-57F0-4ACE-B2F6-5B53E3AE0CED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EFCEA55-57F0-4ACE-B2F6-5B53E3AE0CED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25DE18DE-D317-4F1D-A4EE-C156807DB749}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25DE18DE-D317-4F1D-A4EE-C156807DB749}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25DE18DE-D317-4F1D-A4EE-C156807DB749}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25DE18DE-D317-4F1D-A4EE-C156807DB749}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
